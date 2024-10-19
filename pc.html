@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dima Widad</title>
+    <link href="page.css" rel="stylesheet">
+    <style>
+        body {
+            text-align: center; /* Center-align text and images in the body */
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white for contrast */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a default font */
+        }
+        #imageContainer {
+            display: none; /* Initially hide the image container */
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200px; /* Limit image width */
+            margin: 10px; /* Add margin around images */
+        }
+        .warning {
+            position: absolute; /* Position the warning */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            background-image: url('bloody-texture.png'); /* Add the bloody texture */
+            background-size: cover; /* Cover the entire div */
+            color: white; /* Text color for contrast */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+            border: 2px solid red; /* Optional: Add a red border */
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">Watch Out!</div>
+    <img src="c:\Users\pc\Downloads\pngwing.com.png" alt="Wydad Athletic Club Logo" style="width:150px; height:auto;">
+    <h2>Dima Widad</h2>
+    <p>Welcome to Dima Widad's site. It's a new site about a Moroccan football team.</p>
+    
+    <section id="about">
+        <h3>About Us</h3>
+        <p>
+            The Wydad Athletic Club, also known under the names Wydad or WAC, is one of the most emblematic clubs of Morocco. Founded in 1937 in Casablanca, the club is renowned for its passion, resilience, and achievements.
+            <br><br>
+            Nicknamed “Le Wydad”, the club is recognized for its colors: red and white. Home matches are held at the Mohamed V Stadium, also called the Honor Stadium or Donor, a legendary arena that has witnessed many of the club’s feats.
+            <br><br>
+            The Wydad Athletic Club was created by a group of intellectuals and young resistants during the French occupation of Morocco in 1937, notably the late Mohamed Benjelloun. It first began with a water-polo team before forming its football section in 1939, with the support of Père Jégo (Mohamed Ben Lahcen Affani).
+        </p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: zakariagemer23@gmail.com</p>
+        <p>Instagram: _zakaria_sm</p>
+    </section>
+    
+    <button id="showImagesButton">Show Old WAC Players</button>
+    <div id="imageContainer">
+        <img src="c:\Users\pc\Downloads\rades-tunisia-31st-may-2019-team-of-wydad-casablanca-wacat-the-end-of-a-final-drawn-for-an-hour-and-a-half-esperance-tunis-est-was-crowned-champion-of-africa-entering-the-very-closed-circle-of-teams-managing-to-keep-t.jpg" alt="Players 1">
+        <img src="c:\Users\pc\Downloads\casablanca-morocco-may-30-wydad-ac-team-yahya-attiat-allal-jalal-daoudi-achraf-dari-ayoub-el-amloud-ayman-el-hassouni-zouheir-el-moutaraji-ahmed-reda-tagnaouti-guy-mbenza-pose-for-team-photo-during-the-caf-champions-l.jpg" alt="Players 2">
+    </div>
+
+    <script>
+        document.getElementById('showImagesButton').addEventListener('click', function() {
+            const imageContainer = document.getElementById('imageContainer');
+            // Toggle the display property
+            if (imageContainer.style.display === 'none' || imageContainer.style.display === '') {
+                imageContainer.style.display = 'block'; // Show images
+            } else {
+                imageContainer.style.display = 'none'; // Hide images
+            }
+        });
+    </script>
+</body>
+</html>

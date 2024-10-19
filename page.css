@@ -1,0 +1,35 @@
+title {
+    color: red;
+    font-size: 40px;
+    background-color: black;
+    border: solid 2px red;
+    margin-top: 0;
+    padding-inline-start: 10px; /* Set a padding value */
+}
+
+p {
+    color: red;
+    background-color: black;
+    border: solid 2px red;
+    padding: 10px; /* Added padding for better spacing */
+}
+
+h2 {
+    color: red;
+    background-color: black;
+    border: solid 2px red;
+    padding: 10px; /* Added padding */
+}
+
+h3 {
+    color: red;
+    background-color: black;
+    border: solid 2px red;
+    padding: 10px; /* Added padding */
+}
+
+/* Optional hover effects */
+h2:hover, h3:hover, p:hover {
+    background-color: darkred; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
